@@ -1,0 +1,154 @@
+* {
+    font-family: 'Berkshire Swash', cursive;
+}
+
+body {
+    background: no-repeat fixed top center;
+    background-size: cover;
+    background-position: top;
+    background-image: url(https://www.ceska-justice.cz/wp-content/uploads/2016/07/tumblr_ni3c6lF3DA1u6pcxbo1_1280-696x522.jpg);
+}
+
+.bodyBlik {
+    background: red;
+}
+
+.all {
+    display: grid;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: auto;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 40pt;
+}
+
+#gameStart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    /* Hubený2020 */
+}
+
+#gameStart #navod {
+    background-color: rgba(136, 135, 135, 0.418);
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#nastaveni {
+    display: flex;
+    justify-items: center;
+    margin: auto;
+}
+
+#nastaveni button {
+    margin-left: 5px;
+}
+
+#gameNewStart {
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#gamePlayground {
+    display: none;
+}
+
+#hadaneSlovo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    min-height: 10vh;
+    padding-bottom: 20px;
+}
+
+#zivoty {
+    background-color: rgba(128, 128, 128, 0.521);
+    display: flex;
+    flex-wrap: wrap;
+    /* Hubený2020 */
+    justify-content: center;
+    border-radius: 5px;
+}
+
+#spatnaPismena {
+    background-color: rgba(128, 128, 128, 0.397);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.bunkaPismeno {
+    padding: 30px;
+    width: 15px;
+    background-color: rgba(47, 79, 79, 0.493);
+    font-family: Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    height: 20px;
+    color: white;
+    margin: 2px;
+    border-radius: 5px;
+    /* Hubený2020 */
+    border: solid 1px black;
+    font-size: x-large;
+}
+
+#zivoty img {
+    height: 50px;
+    margin: 5px;
+}
+
+.bunkaSpatnePismeno {
+    padding: 8px;
+    width: 15px;
+    text-align: center;
+    background-color: rgba(255, 97, 97, 0.575);
+    font-family: Courier, monospace;
+    font-weight: bolder;
+    font-size: larger;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+#input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#input button {
+    padding: 2px;
+    margin: 0 2px;
+}
+
+#gamePlayground p {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin: auto;
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 0.281);
+    max-width: 32vw;
+    min-width: 280px;
+    border-radius: 20px;
+}
+
+#uhodnuta_slova {
+    padding: 5px;
+}
+
+#input input {
+    font-family: monospace;
+}

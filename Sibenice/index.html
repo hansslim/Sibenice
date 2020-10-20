@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">  
+  <!-- Hubený2020 -->
+  <title>Šibenice</title>
+</head>
+
+<body>
+  <h1>Šibenice</h1>
+  <div class="all">
+    <div id="gameStart">
+
+      <div id="nastaveni">
+        <select id="obtiznost" name="obtiznost">
+          <option value="12">Klasika (12 HP)</option>
+          <option value="22">Neznám abecedu (22 HP)</option>
+          <option value="12">Jednoduchá (15 HP)</option>
+          <option value="10">Střední (10 HP)</option>
+          <option value="6">Těžká (6 HP)</option>
+          <option value="3">Hardcore (3 HP)</option>
+        </select>
+        <button id="BTStart" onclick="spustNovouHru()">Nová hra</button>
+      </div>
+<!-- Hubený2020 -->
+      <div id="navod">
+
+        <h2>Pravidla/návod</h2>
+        <ul>
+          <li>V boxu pro písmeno je tolerován pouze jeden znak písmena - chybný nebo opakovaný vstup je ignorován.</li>
+          <li>Nemusí být zadávány znaky s diakritikou - tyto znaky jsou doplněny automaticky. To samé platí i obráceně.</li>
+          <li>V případě zadání špatného písmena je ubrán jeden život.</li>
+          <li>Výraz 'ch' není platným vstupem.</li>
+          <li>V boxu pro celé slovo je jakékoli nepřesný zápis (kromě velikosti písmen) brán jako chyba a jsou ubrány 3
+            životy.</li>
+          <li>V přídadě ztráty všech životů se vynuluje počítadlo uhodnutých slov a hra začne odznova.</li>
+        </ul>
+
+      </div>
+    </div>
+    <div id="gameNewStart">
+      <button id="BTNewStart" onclick="spustNovouHru()">Další slovo</button>
+    </div>
+<!-- Hubený2020 -->
+    <div id="gamePlayground">
+      <div id="hadaneSlovo"></div>
+      <div id="zivoty"></div>
+      <div id="spatnaPismena"></div>
+      <div id="input">
+        <button id="BTZkusPismeno" onclick="zkusPismeno()">Zkus písmeno</button>
+        <input type="text" id="inputPismeno" name="pismeno">
+        <button id="BTZkusSlovo" onclick="zkusSlovo()">Zkus celé slovo</button>
+        <input type="text" id="inputSlovo" name="slovo"><br>
+      </div>
+      <p id="uhodnuta_slova">Počet uhodnutých slov: 0</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+<!-- Hubený2020 -->
+</html>
